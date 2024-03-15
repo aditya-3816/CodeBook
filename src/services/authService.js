@@ -7,7 +7,7 @@ export async function login(authDetails) {
 
     const response = await fetch(`${process.env.REACT_APP_HOST}/login`, requestOptions);
     if (!response.ok) {
-        throw { message: response.statusText, status: response.status }
+        throw new Error(response.statusText, response.status);
     };
     const data = await response.json();
 
@@ -19,16 +19,16 @@ export async function login(authDetails) {
     return data;
 }
 
-export async function register(authDetail) {
+export async function register(authDetails) {
     const requestOptions = {
         method: "POST",
         headers: { "content-Type": "application/json" },
-        body: JSON.stringify(authDetail)
+        body: JSON.stringify(authDetails)
     }
 
     const response = await fetch(`${process.env.REACT_APP_HOST}/register`, requestOptions);
     if (!response.ok) {
-        throw { message: response.statusText, status: response.status }
+        throw new Error(response.statusText, response.status);
     };
     const data = await response.json();
 

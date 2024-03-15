@@ -29,7 +29,7 @@ export const ProductsList = () => {
 
     }
     fetchProducts();
-  }, [searchQuery]);
+  }, [searchQuery, initialProductList]);
 
   return (
     <main>

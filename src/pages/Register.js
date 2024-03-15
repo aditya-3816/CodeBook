@@ -12,12 +12,12 @@ export const Register = () => {
     event.preventDefault();
 
     try {
-      const authDetail = {
+      const authDetails = {
         name: event.target.name.value,
         email: event.target.email.value,
         password: event.target.password.value
       }
-      const data = await register();
+      const data = await register(authDetails);
       data.accessToken ? navigate("/products") : toast.error(data);
     } catch (error) {
       toast.error(error.message, { closeOnClick: true });

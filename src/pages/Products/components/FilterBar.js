@@ -1,4 +1,3 @@
-import { type } from "@testing-library/user-event/dist/type";
 import { useFilter } from "../../../context/FilterContext";
 
 export const FilterBar = ({ setShow }) => {
