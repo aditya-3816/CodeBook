@@ -23,7 +23,9 @@ export const Login = () => {
       const data = await login(authDetails);
       data.accessToken ? navigate("/products") : toast.error(data);
     } catch (error) {
+      console.log(error);
       toast.error(error.message, { closeOnClick: true });
+
     }
 
   }

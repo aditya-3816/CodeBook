@@ -5,9 +5,11 @@ export async function login(authDetails) {
         body: JSON.stringify(authDetails)
     }
 
-    const response = await fetch(`${process.env.REACT_APP_HOST}/login`, requestOptions);
+    const response = await fetch(`${process.env.REACT_APP_HOST}/lo`, requestOptions);
+    console.log(response);
     if (!response.ok) {
-        throw new Error(response.statusText, response.status);
+        const errorDetails = { message: response.statusText, status: response.status }
+        throw errorDetails;
     };
     const data = await response.json();
 
@@ -28,7 +30,8 @@ export async function register(authDetails) {
 
     const response = await fetch(`${process.env.REACT_APP_HOST}/register`, requestOptions);
     if (!response.ok) {
-        throw new Error(response.statusText, response.status);
+        const errorDetails = { message: response.statusText, status: response.status }
+        throw errorDetails;
     };
     const data = await response.json();
 
