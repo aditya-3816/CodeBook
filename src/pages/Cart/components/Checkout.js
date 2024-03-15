@@ -33,7 +33,7 @@ export const Checkout = ({ setCheckout }) => {
         event.preventDefault();
 
         try {
-            createOrder(cartList, total, user);
+            const data = createOrder(cartList, total, user);
             clearCart();
             navigate("/order-summary", { state: { data: data, status: true } });
 

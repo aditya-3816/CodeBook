@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 import { ProductCard } from "../../components/";
 import { FilterBar } from "./components/FilterBar";
 import { useFilter } from "../../context/FilterContext";
@@ -14,6 +14,7 @@ export const ProductsList = () => {
   const { productList, initialProductList } = useFilter();
 
   const search = useLocation().search;
+  const searchQuery = new URLSearchParams(search).get("q");
 
   useTitle("Explore eBooks Collection");
 
