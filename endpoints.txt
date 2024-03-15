@@ -1,0 +1,6 @@
+http://localhost:8000/
+
+// http://localhost:8000/products
+// http://localhost:8000/featured_products
+// http://localhost:8000/orders
+// http://localhost:8000/users
