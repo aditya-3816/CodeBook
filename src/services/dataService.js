@@ -44,12 +44,6 @@ export async function createOrder(cartList, total, user) {
 
     const user_credentials = getSessionData();
 
-    const requestOptions = {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Authorization: `Bearer ${user_credentials.token}` },
-        body: JSON.stringify(order)
-    }
-
     const order = {
         user_Cart: cartList,
         user_bill: total,
@@ -60,6 +54,12 @@ export async function createOrder(cartList, total, user) {
             id: user.id
         }
 
+    }
+
+    const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${user_credentials.token}` },
+        body: JSON.stringify(order)
     }
 
     const response = await fetch(`${process.env.REACT_APP_HOST}/660/orders/`, requestOptions);
