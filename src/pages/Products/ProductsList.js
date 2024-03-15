@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation, useSearchParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { ProductCard } from "../../components/";
 import { FilterBar } from "./components/FilterBar";
 import { useFilter } from "../../context/FilterContext";
