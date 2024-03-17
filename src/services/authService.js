@@ -5,7 +5,7 @@ export async function login(authDetails) {
         body: JSON.stringify(authDetails)
     }
 
-    const response = await fetch(`${process.env.REACT_APP_HOST}/lo`, requestOptions);
+    const response = await fetch(`${process.env.REACT_APP_HOST}/login`, requestOptions);
     console.log(response);
     if (!response.ok) {
         const errorDetails = { message: response.statusText, status: response.status }
