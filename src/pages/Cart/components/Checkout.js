@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { useCart } from "../../../context";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../../../context";
+import { createOrder } from "../../../services";
 import { getUser } from "../../../services";
 import { toast } from "react-toastify";
-import { createOrder } from "../../../services/dataService";
 
 
 export const Checkout = ({ setCheckout }) => {
