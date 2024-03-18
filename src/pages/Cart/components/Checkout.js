@@ -34,7 +34,7 @@ export const Checkout = ({ setCheckout }) => {
             const data = createOrder(cartList, total, user);
             console.log(data);
             clearCart();
-            navigate("/order-summary", { queryParams: { data: data, status: true } });
+            navigate("/order-summary", { state: { data: data, status: true } });
 
         } catch (error) {
             toast.error(error.message, { closeOnClick: true });

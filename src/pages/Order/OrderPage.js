@@ -7,6 +7,7 @@ export const OrderPage = () => {
 
   useTitle("Order Summary");
   const { state } = useLocation();
+  console.log(state);
 
   return (
     <main>
