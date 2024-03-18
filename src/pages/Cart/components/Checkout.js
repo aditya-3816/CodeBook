@@ -31,8 +31,8 @@ export const Checkout = ({ setCheckout }) => {
         event.preventDefault();
 
         try {
-            const data = await createOrder(cartList, total, user);
-            navigate("/order-summary", { state: { data: data, status: false } });
+            const data = createOrder(cartList, total, user);
+            navigate("/order-summary", { state: { data: data, status: true } });
             clearCart();
 
         } catch (error) {
