@@ -6,7 +6,6 @@ export async function login(authDetails) {
     }
 
     const response = await fetch(`${process.env.REACT_APP_HOST}/login`, requestOptions);
-    console.log(response);
     if (!response.ok) {
         const errorDetails = { message: response.statusText, status: response.status }
         throw errorDetails;
@@ -29,7 +28,6 @@ export async function register(authDetails) {
     }
 
     const response = await fetch(`${process.env.REACT_APP_HOST}/register`, requestOptions);
-    console.log(response);
     if (!response.ok) {
         const errorDetails = { message: response.statusText, status: response.status }
         throw errorDetails;

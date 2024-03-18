@@ -33,7 +33,6 @@ export async function getOrders() {
     }
 
     const response = await fetch(`${process.env.REACT_APP_HOST}/660/orders?user.id=${user_credentials.id}`, requestOptions);
-    console.log(response);
     if (!response.ok) {
         const errorDetails = { message: response.statusText, status: response.status }
         throw errorDetails;
@@ -66,7 +65,6 @@ export async function createOrder(cartList, total, user) {
     }
 
     const response = await fetch(`${process.env.REACT_APP_HOST}/660/orders/`, requestOptions);
-    console.log(response);
     if (!response.ok) {
         const errorDetails = { message: response.statusText, status: response.status }
         throw errorDetails;
