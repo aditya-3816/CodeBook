@@ -32,7 +32,7 @@ export const Checkout = ({ setCheckout }) => {
 
         try {
             const data = await createOrder(cartList, total, user);
-            navigate("/order-summary", { state: { data: data, status: true } });
+            navigate("/order-summary", { state: { data: data, status: false } });
             clearCart();
 
         } catch (error) {
