@@ -237,13 +237,95 @@
       "best_seller": true
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "user_Cart": [
+        {
+          "id": 10001,
+          "name": "Basics to Advanced React",
+          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
+          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
+          "price": 29,
+          "poster": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
+          "image_local": "/assets/images/10001.avif",
+          "rating": 5,
+          "in_stock": true,
+          "size": 5,
+          "best_seller": true
+        }
+      ],
+      "user_bill": 29,
+      "quantity": 1,
+      "user": {
+        "name": "Swaroop",
+        "email": "swarpya@example.com",
+        "id": 2
+      },
+      "id": 1
+    }
+  ],
   "users": [
     {
       "email": "guest@example.com",
       "password": "$2a$10$c0vMUCU/5slnPH5QwyN5P.E.Q0GC1ZHND9B7MN7ri.Xb17sa1yxc2",
       "name": "Guest",
       "id": 1
+    },
+    {
+      "email": "swarpya@example.com",
+      "password": "$2a$10$iTomqqPIyjqrns78GCiqUOLUuRpr4WFqumbBQh0awHzPC3mYsYFQS",
+      "name": "Swaroop",
+      "id": 2
+    },
+    {
+      "email": "abhinav@example.com",
+      "password": "$2a$10$6btkfD2WRZIrz7C6aIjVb.Of89s/mbXTRRlGLll9MmDS6veThLi4C",
+      "name": "Abhinav",
+      "id": 3
+    },
+    {
+      "email": "xyz@example.com",
+      "password": "$2a$10$de5TzTk.7gyNwJzoYDspfenA2fx5gsV9EdiPv9Jk5cr3.OozFKaz.",
+      "firstName": "xyz",
+      "lastName": "abc",
+      "gender": "male",
+      "DOB": "2024-03-07",
+      "country": "JP",
+      "contact": "1234567857",
+      "id": 4
+    },
+    {
+      "email": "dqn@example.com",
+      "password": "$2a$10$EayXEGyC5aSz57tYe/hAJOzR2KfuL2iKqqPHEQm./uQhvs8p/n7Zu",
+      "firstName": "qhdkqh",
+      "lastName": "",
+      "gender": "",
+      "DOB": "",
+      "country": "Select country",
+      "contact": "12345678900000",
+      "id": 5
+    },
+    {
+      "email": "kjnka@example.com",
+      "password": "$2a$10$IkIOOwS7TuxuKr5Sl5X3jemvK0sK45YagY.MxkiC4pKB4375yUlVG",
+      "firstName": "bjbjbx",
+      "lastName": "bxjbxja",
+      "gender": "",
+      "DOB": "",
+      "country": "Select country",
+      "contact": "123456789068686",
+      "id": 6
+    },
+    {
+      "email": "mandar@example.com",
+      "password": "$2a$10$e0s5Zihfgao0oDgBRLtaX.Wpd/92JzeWorg8sZMBroHrTnDRPULMu",
+      "firstName": "Mandar",
+      "lastName": "Urane",
+      "gender": "male",
+      "DOB": "2014-06-17",
+      "country": "JP",
+      "contact": "9497498749",
+      "id": 7
     }
   ]
 }

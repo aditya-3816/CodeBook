@@ -40,8 +40,6 @@ export const DashboardPage = () => {
       <section>
         {!orders.length && <DashboardEmpty />}
       </section>
-
-
     </main>
   )
 }
