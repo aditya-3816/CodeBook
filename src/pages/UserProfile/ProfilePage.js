@@ -3,6 +3,7 @@ import Logo from "../../assets/Login.png";
 import { getUser } from "../../services";
 import { Link } from "react-router-dom";
 import { updateUser } from "../../services/";
+import { toast } from "react-toastify";
 
 export const ProfilePage = () => {
 
